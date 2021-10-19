@@ -1,0 +1,11 @@
+{
+  "id": 1001,
+  "sku": "TLG-SKU-0082a",
+  "name": "ITEM 0082-update",
+  "description": "ITEM DESC 0082 update",
+  "category": "Books",
+  "price": 82.0,
+  "inventory": 82,
+  "createdOn": "2021-10-14T09:18:39.740270Z",
+  "updatedOn": null
+}

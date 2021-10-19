@@ -1,0 +1,17 @@
+
+# Spring boot actuator configurations
+
+
+# Configure Spring specific properties
+spring:
+  # Datasource Configurations
+  h2:
+    console:
+      enabled: false
+
+  # R2DBC Configuration
+  r2dbc:
+    url: r2dbc:h2:mem:///cataloguedb
+    username: sa
+    password:
+    initialization-mode: always
