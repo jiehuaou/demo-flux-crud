@@ -1,4 +1,4 @@
-package com.example.crud.demo.logic;
+package com.example.crud.demo.service;
 
 import com.example.crud.demo.model.CatalogueItem;
 import com.example.crud.demo.repo.CatalogueRepository;

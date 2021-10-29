@@ -1,6 +1,6 @@
 package com.example.crud.demo.rest;
 
-import com.example.crud.demo.logic.CatalogueCrudService;
+import com.example.crud.demo.service.CatalogueCrudService;
 import com.example.crud.demo.model.CatalogueItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

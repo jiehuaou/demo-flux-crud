@@ -1,6 +1,6 @@
 package com.example.crud.demo;
 
-import com.example.crud.demo.logic.CatalogueCrudService;
+import com.example.crud.demo.service.CatalogueCrudService;
 import com.example.crud.demo.model.CatalogueItem;
 import com.example.crud.demo.rest.ResourceNotFoundException;
 import lombok.extern.log4j.Log4j2;
@@ -13,7 +13,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-import java.time.Duration;
 import java.time.Instant;
 
 @Log4j2
