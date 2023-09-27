@@ -1,22 +1,15 @@
 package com.example.crud.demo;
 
-import com.example.crud.demo.logic.MyValidator;
+import java.time.Instant;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.util.Assert;
+
 import com.example.crud.demo.model.Box;
 import com.example.crud.demo.model.CatalogueItem;
 import com.example.crud.demo.model.Rectangle;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-//import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.util.Assert;
-
-import java.time.Instant;
-
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(SpringExtension.class)
 public class PojoTests {

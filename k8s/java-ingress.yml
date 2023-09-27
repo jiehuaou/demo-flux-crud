@@ -1,0 +1,22 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-java-ingress
+  labels:
+    name: my-java-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+  - host: hello-world.info
+    http:
+      paths:
+      - path: /crud(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: my-java-svc
+            port: 
+              number: 8080

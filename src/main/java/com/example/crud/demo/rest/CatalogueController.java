@@ -12,12 +12,18 @@ import reactor.core.publisher.Mono;
 
 import javax.validation.Valid;
 import java.time.Duration;
+import java.util.Date;
 
 @RestController
 public class CatalogueController {
 
     @Autowired
     CatalogueCrudService catalogueCrudService;
+
+    @GetMapping(path = "/")
+    public String home() {
+        return "Hello World " + new Date().toString() + " \n";
+    }
 
 
     @GetMapping(path= "/item-stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)

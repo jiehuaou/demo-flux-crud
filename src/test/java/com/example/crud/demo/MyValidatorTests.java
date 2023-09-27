@@ -1,30 +1,28 @@
 package com.example.crud.demo;
 
-import com.example.crud.demo.logic.MyValidator;
-import com.example.crud.demo.logic.ValidationAdvice;
-import com.example.crud.demo.model.CatalogueItem;
-import lombok.extern.log4j.Log4j2;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-//import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.aop.framework.ProxyFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.time.Instant;
+import java.util.Set;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import javax.validation.Validation;
 import javax.validation.Validator;
-import java.time.Instant;
-import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.aop.framework.ProxyFactory;
+
+import com.example.crud.demo.logic.MyValidator;
+import com.example.crud.demo.logic.ValidationAdvice;
+import com.example.crud.demo.model.CatalogueItem;
+
+import lombok.extern.log4j.Log4j2;
 
 //@SpringBootTest
 //@RunWith(MockitoJUnitRunner.class)
