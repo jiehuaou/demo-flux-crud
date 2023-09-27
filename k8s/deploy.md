@@ -22,3 +22,4 @@ curl --resolve "hello-world.info:80:$(minikube ip)" -i http://hello-world.info/c
 
 curl --resolve "hello-world.info:80:$(minikube ip)" -i http://hello-world.info/crud/item/TLG-SKU-0082
 
+curl --resolve "hello-world.info:80:$(minikube ip)" -i http://hello-world.info/crud/item-stream

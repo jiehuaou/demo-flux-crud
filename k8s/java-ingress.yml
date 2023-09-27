@@ -14,7 +14,7 @@ spec:
     http:
       paths:
       - path: /crud(/|$)(.*)
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: my-java-svc
