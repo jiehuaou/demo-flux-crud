@@ -22,7 +22,7 @@ public class CatalogueController {
 
     @GetMapping(path = "/")
     public String home() {
-        return "Hello World " + new Date().toString() + " \n";
+        return "Hello World - " + new Date().toString() + " \n";
     }
 
 

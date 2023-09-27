@@ -5,10 +5,10 @@ FROM adoptopenjdk:11-jdk-hotspot
 WORKDIR /app
 
 # Copy the application JAR file to the container
-COPY target/demo-webflux-crud-0.0.1-SNAPSHOT.jar demo-webflux-crud-0.0.1-SNAPSHOT.jar
+COPY target/demo-webflux-crud-1.0-SNAPSHOT.jar demo-webflux-crud-1.0-SNAPSHOT.jar
 
 # Expose the desired port
 EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "demo-webflux-crud-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "demo-webflux-crud-1.0-SNAPSHOT.jar"]

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example.crud</groupId>
 	<artifactId>demo-webflux-crud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>demo-webflux-crud</name>
 	<description>Demo project for Spring Boot Flux CRUD</description>
 	<properties>
@@ -34,11 +34,11 @@
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
 			<version>1.29</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

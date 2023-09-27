@@ -1,12 +1,13 @@
-# build
-docker build -t my-java-app .
+# build with local minikube docker
 
-# deploy to k8s
+eval $(minikube docker-env)
+
+docker build -t my-java-app:v1.0 .
+
+# deploy to k8s if image is in remote docker
 kubectl create deployment my-java-deployment --image=my-java-app
 
 # deploy to k8s with local image （minikube docker）
-
-eval $(minikube docker-env)
 
 kubectl apply -f k8s/java-app.yml
 
