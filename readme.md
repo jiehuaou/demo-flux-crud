@@ -26,4 +26,4 @@ use **@SpringBootTest** if you need to bootstracpe the whole spring boot, which 
 
 ## deploy to k8s
 
-please refer to [./k8s/deploy.md]
+please refer to [./k8s/deploy.md](./k8s/deploy.md)
